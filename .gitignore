@@ -1,0 +1,5 @@
+cypress.env.json
+node_modules
+*.mp4
+*.png
+*.jpeg
