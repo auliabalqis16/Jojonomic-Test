@@ -23,6 +23,7 @@ describe('Test Skill jojonomic', () => {
     cy.contains('Find locations').click()
 
     cy.get('#locatorTextSearch').focus().clear().type('Sydney 2000{enter}', {force: true, delay: 0})
+    cy.wait(1000)
     cy.contains('Rozelle Bay Maritime Service Centre').should('be.visible')
 
   })
